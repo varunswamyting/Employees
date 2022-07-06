@@ -1,7 +1,7 @@
 import React from "react";
 import { request, gql } from "graphql-request";
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const Employee = () => {
