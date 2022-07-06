@@ -5,11 +5,11 @@ import { useState, useEffect } from "react";
 
 const EmployesDetailes = () => {
   const [data, setData] = useState("");
+  const result = useLocation();
 
   useEffect(() => {
-  const result = useLocation();
   const path = result.pathname.split("/")[2];
-  
+
     const query = gql`
       {
        employees(where:{ slug: "${path}"}) {
