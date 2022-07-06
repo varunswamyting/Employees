@@ -6,9 +6,9 @@ import { useState, useEffect } from "react";
 const EmployesDetailes = () => {
   const [data, setData] = useState("");
   const result = useLocation();
-
-  useEffect(() => {
   const path = result.pathname.split("/")[2];
+  
+  useEffect(() => {
 
     const query = gql`
       {
@@ -28,7 +28,8 @@ const EmployesDetailes = () => {
       "https://api-ap-south-1.graphcms.com/v2/cl4mbehal7kfh01z60e44gu48/master",
       query
     ).then((data) => setData(data));
-  }, []);
+  }, [path]);
+  
   return (
     <>
       <img src={data && data.employees[0].picture.url} width="300px" alt="" />
