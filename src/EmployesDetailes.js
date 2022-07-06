@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { request, gql } from "graphql-request";
 import { useState, useEffect } from "react";
 

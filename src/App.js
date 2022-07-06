@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+
 // import './App.css';
-import GraphCms from './GraphCms';
+
 import Employee from './Employee';
 import {
   BrowserRouter,
